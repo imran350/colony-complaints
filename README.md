@@ -156,17 +156,6 @@ Default port is `3000`. To change, edit `server.js`:
 const PORT = process.env.PORT || 3000;
 ```
 
-## 📸 Screenshots
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
-
-### Reports
-![Reports](https://via.placeholder.com/800x400?text=Reports+Screenshot)
-
-### Print Preview
-![Print](https://via.placeholder.com/800x400?text=Print+Preview)
-
 ## 🔜 Upcoming Features
 
 - 🔐 **Admin Login System** - Secure authentication
