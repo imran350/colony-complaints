@@ -391,12 +391,15 @@ body.rtl .stat-card.clickable:hover {
 }
 
 .btn-secondary {
-    background: #e2e8f0;
+    background: var(--border);
     color: var(--text);
+    border: 2px solid var(--border);
 }
 
 .btn-secondary:hover {
-    background: #cbd5e1;
+    background: var(--text-light);
+    color: white;
+    border-color: var(--text-light);
 }
 
 .btn-success {
@@ -618,11 +621,23 @@ body.rtl .stat-card.clickable:hover {
 }
 
 .btn-close {
-    background: none;
+    background: var(--danger);
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: var(--text-light);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.btn-close:hover {
+    background: #dc2626;
+    transform: scale(1.1);
 }
 
 .modal form {
