@@ -1,0 +1,171 @@
+/* Offline Icons - SVG Data URIs */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+/* Dashboard */
+.fa-dashboard::before {
+    content: "📊";
+}
+
+/* Clipboard/List */
+.fa-clipboard-list::before {
+    content: "📋";
+}
+
+/* Plus Circle */
+.fa-plus-circle::before {
+    content: "➕";
+}
+
+/* Chart Bar */
+.fa-chart-bar::before {
+    content: "📈";
+}
+
+/* Plus */
+.fa-plus::before {
+    content: "➕";
+}
+
+/* Clock - Pending */
+.fa-clock::before {
+    content: "⏰";
+}
+
+/* Spinner - In Progress */
+.fa-spinner::before {
+    content: "🔄";
+}
+
+/* Check Circle - Completed */
+.fa-check-circle::before {
+    content: "✅";
+}
+
+/* Calendar Day - Today */
+.fa-calendar-day::before {
+    content: "📅";
+}
+
+/* Calendar Alt - Month */
+.fa-calendar-alt::before {
+    content: "🗓️";
+}
+
+/* List - Total */
+.fa-list::before {
+    content: "📃";
+}
+
+/* Building */
+.fa-building::before {
+    content: "🏢";
+}
+
+/* Filter */
+.fa-filter::before {
+    content: "🔍";
+}
+
+/* Undo/Reset */
+.fa-undo::before {
+    content: "↩️";
+}
+
+/* Save */
+.fa-save::before {
+    content: "💾";
+}
+
+/* File Alt - Report */
+.fa-file-alt::before {
+    content: "📄";
+}
+
+/* Print */
+.fa-print::before {
+    content: "🖨️";
+}
+
+/* Download */
+.fa-download::before {
+    content: "⬇️";
+}
+
+/* Edit */
+.fa-edit::before {
+    content: "✏️";
+}
+
+/* Trash/Delete */
+.fa-trash::before {
+    content: "🗑️";
+}
+
+/* Globe - Language */
+.fa-globe::before {
+    content: "🌐";
+}
+
+/* Inbox - No results */
+.fa-inbox::before {
+    content: "📥";
+}
+
+/* Faucet - Plumber */
+.fa-faucet::before {
+    content: "🚰";
+}
+
+/* Bolt - Electrician */
+.fa-bolt::before {
+    content: "⚡";
+}
+
+/* Hammer - Carpenter */
+.fa-hammer::before {
+    content: "🔨";
+}
+
+/* Paint Roller - Painter */
+.fa-paint-roller::before {
+    content: "🎨";
+}
+
+/* Broom - Sweeper */
+.fa-broom::before {
+    content: "🧹";
+}
+
+/* Trowel - Mason */
+.fa-trowel::before {
+    content: "🔧";
+}
+
+/* Leaf - Gardener */
+.fa-leaf::before {
+    content: "🍃";
+}
+
+/* Water - Sewerage */
+.fa-water::before {
+    content: "💧";
+}
+
+/* Wrench - Default */
+.fa-wrench::before {
+    content: "🔧";
+}
+
+/* Check */
+.fa-check::before {
+    content: "✓";
+}

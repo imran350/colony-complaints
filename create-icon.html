@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Icon</title>
+</head>
+<body>
+    <canvas id="canvas256" width="256" height="256"></canvas>
+    <canvas id="canvas128" width="128" height="128"></canvas>
+    <canvas id="canvas64" width="64" height="64"></canvas>
+    <canvas id="canvas32" width="32" height="32"></canvas>
+    <canvas id="canvas16" width="16" height="16"></canvas>
+    <script>
+        function drawIcon(canvas) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+
+            // Background circle
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size/2 - 2, 0, 2 * Math.PI);
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#4CAF50');
+            gradient.addColorStop(1, '#2E7D32');
+            ctx.fillStyle = gradient;
+            ctx.fill();
+
+            // Border
+            ctx.strokeStyle = '#1B5E20';
+            ctx.lineWidth = Math.max(2, size/16);
+            ctx.stroke();
+
+            // Document/clipboard shape
+            const pad = size * 0.15;
+            const docW = size - (pad * 2);
+            const docH = (size - (pad * 2)) * 1.1;
+
+            ctx.fillStyle = '#FFF';
+            ctx.beginPath();
+            ctx.roundRect(pad, pad, docW, docH, size/20);
+            ctx.fill();
+
+            // Clip
+            ctx.fillStyle = '#4CAF50';
+            ctx.beginPath();
+            ctx.roundRect(pad + docW*0.35, pad - size*0.05, docW*0.3, size*0.1, size/40);
+            ctx.fill();
+
+            // Lines representing text
+            ctx.fillStyle = '#333';
+            const lineHeight = size * 0.08;
+            const startY = pad + size * 0.25;
+            const lineW = docW * 0.7;
+            const lineX = pad + (docW - lineW) / 2;
+
+            for (let i = 0; i < 4; i++) {
+                ctx.beginPath();
+                ctx.roundRect(lineX, startY + (i * lineHeight * 1.2), lineW, lineHeight, size/80);
+                ctx.fill();
+            }
+
+            // Exclamation mark (complaint indicator)
+            ctx.fillStyle = '#F44336';
+            ctx.beginPath();
+            ctx.arc(size * 0.75, size * 0.75, size * 0.15, 0, 2 * Math.PI);
+            ctx.fill();
+
+            ctx.fillStyle = '#FFF';
+            ctx.font = `bold ${size * 0.15}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('!', size * 0.75, size * 0.75 + size * 0.02);
+        }
+
+        ['256', '128', '64', '32', '16'].forEach(size => {
+            drawIcon(document.getElementById('canvas' + size));
+        });
+
+        // Save all sizes as Data URLs (copy from console)
+        console.log('Icon generated. Right-click and save the canvas.');
+    </script>
+</body>
+</html>

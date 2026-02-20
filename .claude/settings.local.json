@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build-win)",
+      "Bash(powershell -Command \"$WshShell = New-Object -comObject WScript.Shell; $Shortcut = $WshShell.CreateShortcut\\(\"\"$env:USERPROFILE\\\\Desktop\\\\Colony Complaints.lnk\"\"\\); $Shortcut.TargetPath = \"\"D:\\\\Work\\\\claude\\\\colony-complaints\\\\dist\\\\win-unpacked\\\\Colony Complaints.exe\"\"; $Shortcut.WorkingDirectory = \"\"D:\\\\Work\\\\claude\\\\colony-complaints\\\\dist\\\\win-unpacked\"\"; $Shortcut.Description = \"\"Colony Complaints Management System\"\"; $Shortcut.Save\\(\\)\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File create-shortcut.ps1)",
+      "Bash(set CSC_IDENTITY_AUTO_DISCOVERY=false)",
+      "Bash(\"/c/Users/CityServices/Desktop/Colony Complaints.lnk.vbs\":*)",
+      "Bash(cscript:*)",
+      "Bash(npm start)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(timeout /t 2:*)",
+      "Bash(rd /s /q \"D:\\\\Work\\\\claude\\\\colony-complaints\\\\dist\")",
+      "Bash(npx asar extract:*)",
+      "Bash(npm run electron)",
+      "Bash(where:*)",
+      "Bash(tasklist:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(xargs:*)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(npm run build-win-portable:*)",
+      "Bash(/tmp/update-shortcut.ps1:*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File /tmp/update-shortcut.ps1)",
+      "Bash(public/styles.css:*)",
+      "Bash(echo:*)",
+      "Bash(public/app.js:*)",
+      "Bash(CHANGES_LOG.md:*)",
+      "Bash(sqlite3:*)",
+      "Bash(netstat:*)",
+      "Bash(ls:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
